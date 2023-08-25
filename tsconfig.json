@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Target ECMAScript version.
+    "module": "commonjs", // Use CommonJS module system for Node.js compatibility.
+    "declaration": true, // Generates declaration files (.d.ts).
+    "outDir": "./dist", // Output directory for compiled files.
+    "strict": true, // Enable all strict type checking options.
+    "esModuleInterop": true, // Enables ES6 module interop with CommonJS modules.
+    "skipLibCheck": true, // Skip checking declaration files.
+    "forceConsistentCasingInFileNames": true // Disallow inconsistent casing in filenames.
+  },
+  "include": [
+    "src/**/*.ts" // Source files to be compiled.
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules from being compiled.
+    "**/*.test.ts" // Exclude test files from the output.
+  ]
+}

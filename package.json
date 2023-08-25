@@ -1,0 +1,33 @@
+{
+  "name": "tsdatastructures",
+  "description": "A TypeScript library providing classic, strongly-typed data structures.",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bogdanmartinescu/tsdatastructures.git"
+  },
+  "keywords": [
+    "typescript",
+    "data structures",
+    "stack",
+    "queue",
+    "linkedlist"
+  ],
+  "author": "Liviu Martinescu<hi@mlb.ro>",
+  "license": "MIT",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "jest": "^29.6.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
