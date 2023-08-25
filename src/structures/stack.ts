@@ -1,20 +1,36 @@
-export class Stack<T> implements IDataStructure<T> {
+import { EventEmitter } from "events";
+
+export class Stack<T> extends EventEmitter implements IDataStructure<T> {
   private items: T[] = [];
+
+  private emitEvent(eventName: string, item: T) {
+    this.emit(eventName, item);
+  }
 
   push(element: T): void {
     this.items.push(element);
+    this.emitEvent("push", element);
   }
 
   pop(): T | undefined {
-    return this.items.pop();
+    const poppedItem = this.items.pop();
+    if (poppedItem) {
+      this.emitEvent("pop", poppedItem);
+    }
+    return poppedItem;
   }
 
   peek(): T | undefined {
-    return this.items[this.items.length - 1];
+    const peekedItem = this.items[this.items.length - 1];
+    if (peekedItem) {
+      this.emitEvent("peek", peekedItem);
+    }
+    return peekedItem;
   }
 
   size(): number {
-    return this.items.length;
+    let len = this.items.length;
+    return len;
   }
 
   isEmpty(): boolean {
