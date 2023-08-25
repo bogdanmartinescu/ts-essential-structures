@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Stack = void 0;
 const events_1 = require("events");
 class Stack extends events_1.EventEmitter {
     constructor() {
@@ -16,16 +15,14 @@ class Stack extends events_1.EventEmitter {
     }
     pop() {
         const poppedItem = this.items.pop();
-        if (poppedItem) {
+        if (poppedItem)
             this.emitEvent("pop", poppedItem);
-        }
         return poppedItem;
     }
     peek() {
         const peekedItem = this.items[this.items.length - 1];
-        if (peekedItem) {
+        if (peekedItem)
             this.emitEvent("peek", peekedItem);
-        }
         return peekedItem;
     }
     size() {
@@ -39,4 +36,4 @@ class Stack extends events_1.EventEmitter {
         this.items = [];
     }
 }
-exports.Stack = Stack;
+exports.default = Stack;

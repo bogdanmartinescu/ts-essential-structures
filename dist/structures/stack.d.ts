@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import { EventEmitter } from "events";
-export declare class Stack<T> extends EventEmitter implements IDataStructure<T> {
+export default class Stack<T> extends EventEmitter implements IStack<T> {
     private items;
     private emitEvent;
     push(element: T): void;

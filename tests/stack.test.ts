@@ -1,4 +1,4 @@
-import { Stack } from "../src/structures/stack";
+import Stack from "../src/structures/stack";
 
 describe("Stack", () => {
   it("should push and pop", () => {
@@ -6,5 +6,4 @@ describe("Stack", () => {
     stack.push(1);
     expect(stack.pop()).toBe(1);
   });
-  // More tests...
 });
