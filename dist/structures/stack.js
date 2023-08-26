@@ -2,12 +2,18 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const events_1 = require("events");
 class Stack extends events_1.EventEmitter {
-    constructor() {
-        super(...arguments);
+    constructor(options) {
+        super();
         this.items = [];
+        this.isDebugMode = false;
+        if (options && options.debug)
+            this.isDebugMode = options.debug;
     }
     emitEvent(eventName, item) {
-        this.emit(eventName, item);
+        if (this.isDebugMode) {
+            this.emit(eventName, item);
+            console.warn("Event ", eventName, "has been performed on item ", item);
+        }
     }
     push(element) {
         this.items.push(element);

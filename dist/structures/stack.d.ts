@@ -1,7 +1,12 @@
 /// <reference types="node" />
 import { EventEmitter } from "events";
+interface StackOptions {
+    debug?: boolean;
+}
 export default class Stack<T> extends EventEmitter implements IStack<T> {
     private items;
+    private isDebugMode;
+    constructor(options?: StackOptions);
     private emitEvent;
     push(element: T): void;
     pop(): T | undefined;
@@ -10,3 +15,4 @@ export default class Stack<T> extends EventEmitter implements IStack<T> {
     isEmpty(): boolean;
     clear(): void;
 }
+export {};
