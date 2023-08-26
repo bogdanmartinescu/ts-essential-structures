@@ -1,10 +1,23 @@
 import { EventEmitter } from "events";
 
+interface StackOptions {
+  debug?: boolean;
+}
+
 export default class Stack<T> extends EventEmitter implements IStack<T> {
   private items: T[] = [];
+  private isDebugMode: boolean = false;
+
+  constructor(options?: StackOptions) {
+    super();
+    if (options && options.debug) this.isDebugMode = options.debug;
+  }
 
   private emitEvent(eventName: string, item: T) {
-    this.emit(eventName, item);
+    if (this.isDebugMode) {
+      this.emit(eventName, item);
+      console.warn("Event ", eventName, "has been performed on item ", item);
+    }
   }
 
   push(element: T): void {
