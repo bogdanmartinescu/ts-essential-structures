@@ -31,7 +31,7 @@ jobs:
         uses: nick-invision/retry@v2
         with:
           max_attempts: 3
-          delay_seconds: 60
+          timeout_seconds: 60
           command: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
