@@ -1,7 +1,7 @@
 {
-  "name": "tsdatastructures",
+  "name": "ts-essential-structures",
   "description": "A TypeScript library providing classic, strongly-typed data structures.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -12,14 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bogdanmartinescu/tsdatastructures.git"
+    "url": "https://github.com/bogdanmartinescu/ts-essential-structures.git"
   },
   "keywords": [
     "typescript",
     "data structures",
     "stack",
     "queue",
-    "linkedlist"
+    "linkedlist",
+    "binary search tree"
   ],
   "author": "Liviu Martinescu<hi@mlb.ro>",
   "license": "MIT",

@@ -1,6 +1,6 @@
-# TSDataStructures
+# TSEssentialStructures
 
-TSDataStructures is a TypeScript-focused library that offers classic, strongly-typed data structures such as Stack, Queue, LinkedList, and more.
+TSEssentialStructures is a TypeScript-focused library that offers classic, strongly-typed data structures such as Stack, Queue, LinkedList, Binary Search Tree, and more.
 
 ## Features
 
@@ -13,12 +13,18 @@ TSDataStructures is a TypeScript-focused library that offers classic, strongly-t
 ## Installation
 
 ```bash
-npm install tsdatastructures --save
+npm install ts-essential-structures --save
 ```
 
 ## Documentation
 
-For detailed documentation on each data structure and their methods, check out the docs directory.
+For detailed documentation on each data structure and their methods, check out the docs directory:
+
+- [Stack](./docs/stack.md)
+- [Queue](./docs/queue.md)
+- [LinkedList](./docs/linkedList.md)
+- [Binary Search Tree](./docs/binarySearchTree.md)
+- [Hash Map](./docs/hashMap.md)
 
 ## Contributing
 
