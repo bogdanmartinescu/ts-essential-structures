@@ -1,6 +1,6 @@
 # TSEssentialStructures
 
-TSEssentialStructures is a TypeScript-focused library that offers classic, strongly-typed data structures such as Stack, Queue, LinkedList, Binary Search Tree, and more.
+TS Essential Structures is a TypeScript-focused library that offers classic, strongly-typed data structures such as Stack, Queue, LinkedList, Binary Search Tree, and more.
 
 ## Features
 

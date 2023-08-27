@@ -12,7 +12,7 @@ class Stack extends events_1.EventEmitter {
     emitEvent(eventName, item) {
         if (this.isDebugMode) {
             this.emit(eventName, item);
-            console.warn("Event ", eventName, "has been performed on item ", item);
+            // console.warn("Event ", eventName, "has been performed on item ", item);
         }
     }
     push(element) {

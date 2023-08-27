@@ -16,7 +16,7 @@ export default class Stack<T> extends EventEmitter implements IStack<T> {
   private emitEvent(eventName: string, item: T) {
     if (this.isDebugMode) {
       this.emit(eventName, item);
-      console.warn("Event ", eventName, "has been performed on item ", item);
+      // console.warn("Event ", eventName, "has been performed on item ", item);
     }
   }
 
